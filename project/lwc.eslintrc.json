@@ -1,5 +1,5 @@
 {
-  "extends": ["@salesforce/eslint-config-lwc/recommended"],
+  "extends": ["@salesforce/eslint-config-lwc/recommended", "prettier"],
   "overrides": [
     {
       "files": ["*.test.js"],
@@ -10,5 +10,38 @@
         "node": true
       }
     }
-  ]
+  ],
+  "rules": {
+    "no-trailing-spaces": 1,
+    "no-spaced-func": 1,
+    "no-lone-blocks": 1,
+    "no-lonely-if": 1,
+    "no-extra-semi": 1,
+    "block-scoped-var": 1,
+    "brace-style": [
+      1,
+      "1tbs"
+    ],
+    "comma-spacing": 1,
+    "comma-style": 1,
+    "semi": 1,
+    "space-unary-ops": [
+      1,
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+    "vars-on-top": 2,
+    "valid-jsdoc": 1,
+    "yoda": [
+      1,
+      "never"
+    ],
+    "no-console": 2,
+    "quotes": [
+      "warn",
+      "single"
+    ]
+  }
 }
